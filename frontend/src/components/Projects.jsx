@@ -109,7 +109,7 @@ const Projects = () => {
     {
       number: '03',
       name: 'House Price Prediction',
-      subtitle: 'ML Web Application',
+      subtitle: 'AI Web Application',
       description: 'Built a full-stack property price estimator (MERN): a React.js/TypeScript form collects location, size, and amenities; a Node.js/Express API calls the OpenAI API for the prediction plus a natural-language explanation; MongoDB stores listings and prediction history.',
       tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API']
     },
