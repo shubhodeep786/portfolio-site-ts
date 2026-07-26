@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Award, BookOpen, Trophy, Code2 } from 'lucide-react';
+import { Award, BookOpen, Trophy, Code2, Layers } from 'lucide-react';
 import { TECH_ICONS } from '@/lib/techIcons';
 import SectionBackground from './SectionBackground';
 
@@ -24,7 +24,7 @@ const Skills = () => {
         'Tailwind CSS',
         'HTML5',
         'CSS3',
-        'Responsive Design',
+        'Responsive & Mobile-First Design',
         'Component Architecture',
         'Accessibility (WCAG)'
       ]
@@ -58,6 +58,12 @@ const Skills = () => {
         'Netlify',
         'Render'
       ]
+    },
+    {
+      icon: Layers,
+      title: 'Core Concepts',
+      wide: true,
+      skills: ['Data Structures & Algorithms', 'Agile/Team Collaboration', 'UI/UX Design']
     }
   ];
 
@@ -73,6 +79,12 @@ const Skills = () => {
       org: 'Google Developer Student Clubs',
       period: 'Oct 2022 – Oct 2023',
       description: 'Produced social media content and event collateral using Figma and Canva, supporting community growth and event outreach.'
+    },
+    {
+      title: 'Executive, Graphics Team',
+      org: 'Google Developer Student Clubs',
+      period: 'Nov 2021 – Nov 2022',
+      description: 'Designed visual assets and graphics for club events and social media campaigns.'
     }
   ];
 
@@ -152,7 +164,7 @@ const Skills = () => {
                 key={index}
                 variants={skillCardVariants}
                 whileHover={{ scale: 1.02 }}
-                className="glass-card p-8 transition-shadow"
+                className={`glass-card p-8 transition-shadow ${category.wide ? 'md:col-span-2' : ''}`}
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="p-3 bg-cyan-500/10 rounded-lg">
@@ -232,11 +244,19 @@ const Skills = () => {
           </motion.div>
 
           {/* Certifications */}
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-xl font-bold text-white pt-8"
+          >
+            Certifications & Achievements
+          </motion.h3>
           <motion.div
             variants={leadershipContainerVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
-            className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
             {certifications.map((cert, index) => (
               <motion.div

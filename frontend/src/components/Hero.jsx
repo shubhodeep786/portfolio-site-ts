@@ -54,19 +54,68 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // Create a text file with resume content
     const resumeContent = `TANYA SINGH
-Full Stack Developer | MERN Stack (React.js & Node.js) | TypeScript
-
-Contact:
-Email: tanyasingh1227@gmail.com
-Phone: +91 9131414080
-Location: Indore, India
-LinkedIn: linkedin.com/in/tanya-singh9b5492225
-GitHub: github.com/Tanya1227
+Indore, India | tanyasingh1227@gmail.com | +91 9131414080
+linkedin.com/in/tanya-singh9b5492225 | github.com/Tanya1227
 
 PROFESSIONAL SUMMARY
-Full Stack Software Engineer at 47Billion Information Technologies with production experience building responsive, component-driven web applications using React.js, TypeScript, and JavaScript (ES6+), integrated with REST APIs in production.
+Full Stack Software Engineer at 47Billion Information Technologies, building responsive, component-driven web applications in React.js, TypeScript, and JavaScript (ES6+), integrated with production REST APIs. Hands-on backend experience across independent MERN-stack projects — REST API design, authentication, and MongoDB schema design in Node.js/Express — with real-time features and AI-integrated flows. Strong grounding in accessibility, performance, and cross-functional collaboration, with an active open-source contribution history.
 
-[Full resume content would be here]`;
+TECHNICAL SKILLS
+Languages: JavaScript (ES6+), TypeScript
+Frontend: React.js, Redux Toolkit, TanStack Query, Tailwind CSS, HTML5, CSS3, Responsive & Mobile-First Design, Component Architecture, Accessibility (WCAG)
+Backend & Database: Node.js, Express.js, MongoDB, Mongoose, REST API Design, JWT Auth, Socket.io
+Tools & Platforms: Git & GitHub, Figma, Canva, VS Code, Postman, Vitest, Jest, React Testing Library, Vercel, Netlify, Render
+Core Concepts: Data Structures & Algorithms, Agile/Team Collaboration, UI/UX Design
+
+EXPERIENCE
+Associate Software Engineer | 47Billion Information Technologies Pvt. Ltd. | Jan 2025 – Present
+- Develop and ship production-grade features for 7Seers, 47Billion's AI-powered mock interview and assessment platform, building reusable, type-safe React.js/TypeScript components consumed across candidate-facing and admin experiences
+- Own frontend features end-to-end, from UI implementation through REST API integration, directly shaping how candidates experience 7Seers' AI-driven interview and assessment flows
+- Collaborate cross-functionally with product and design to translate requirements into responsive, accessible interfaces
+- Contribute to performance and UX improvements across the frontend codebase, focusing on component reusability and maintainability
+
+Software Development Intern | 47Billion Information Technologies Pvt. Ltd. | Jun 2024 – Aug 2024
+- Built and maintained responsive UI components in React.js and JavaScript for 7Seers' mock interview and assessment flows
+- Partnered with backend engineers on API contracts and response structuring
+- Practiced writing type-safe, maintainable component logic
+
+Web Development & Designing Intern | Oasis Infobyte | Aug 2022 – Sep 2022
+- Developed and deployed single-page applications — a portfolio site and a temperature converter — using HTML5, CSS3, and JavaScript
+- Translated Figma design mockups into pixel-accurate, cross-browser-compatible interfaces
+
+Web Developer Intern | LetsGrowMore | Dec 2021 – Jan 2022
+- Built a landing page and a dynamic user-card grid layout with an animated loading state in React.js
+
+Open Source Contributor | Hacktoberfest | Oct 2023
+- Contributed to 10+ open-source repositories; 6 pull requests successfully merged
+
+ACADEMIC & PERSONAL PROJECTS
+Saheli — Menstrual Healthcare Web Platform (React.js, TypeScript, Node.js, Express.js, MongoDB, OpenAI API)
+- Full-stack MERN platform with secure authentication and cycle-tracking data, plus an AI health assistant via the OpenAI API
+
+EquipNet — Medical Equipment Rental Platform (React.js, TypeScript, Node.js, Express.js, MongoDB, Google Maps API, OpenAI API)
+- Full-stack rental marketplace with Google Maps location search; shortlisted for Google Solution Challenge India Regional Bootcamp 2024
+
+House Price Prediction — ML Web App (React.js, TypeScript, Node.js, Express.js, MongoDB, OpenAI API)
+- Full-stack property price estimator with OpenAI-generated natural-language explanations
+
+QuizGenie — AI-Powered Trivia Challenge (React.js, TypeScript, Node.js, Express.js, MongoDB, OpenAI API)
+- Full-stack trivia game with live timer, leaderboards, and OpenAI-generated questions on demand
+
+LEADERSHIP & POSITIONS OF RESPONSIBILITY
+Lead, Google Developer Student Clubs | Medicaps University | Jul 2023 – Jul 2024
+Executive, Content & Design Team | Google Developer Student Clubs | Oct 2022 – Oct 2023
+Executive, Graphics Team | Google Developer Student Clubs | Nov 2021 – Nov 2022
+
+EDUCATION
+B.Tech in Computer Science | Medicaps University, Indore, India | 2021 – 2025 | CGPA: 9.1 / 10
+Senior Secondary (XII), CBSE | Advanced Academy, Indore, India | 2021 | CGPA: 9.42 / 10
+
+CERTIFICATIONS & ACHIEVEMENTS
+- IBM "Tools for Data Science" (Nov 2023)
+- NPTEL: Programming in Java — Elite with Silver (Jan–Apr 2023)
+- Cleared Round 1 of Smart India Hackathon 2023
+- Completed Google Cloud Study Jam and Google Gen AI Study Jam`;
 
     const blob = new Blob([resumeContent], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);

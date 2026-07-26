@@ -60,12 +60,14 @@ const ProjectCard = ({ project }) => {
 
           <p className="text-slate-300 leading-relaxed">{project.description}</p>
 
-          <div className="bg-white/[0.03] border border-white/10 rounded-lg p-4">
-            <div className="flex items-start gap-2">
-              <Code2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-              <p className="text-slate-400 text-sm">{project.highlight}</p>
+          {project.highlight && (
+            <div className="bg-white/[0.03] border border-white/10 rounded-lg p-4">
+              <div className="flex items-start gap-2">
+                <Code2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                <p className="text-slate-400 text-sm">{project.highlight}</p>
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Tech stack */}
           <div className="flex flex-wrap gap-2 pt-2">
@@ -94,23 +96,22 @@ const Projects = () => {
       subtitle: 'Menstrual Healthcare Web Platform',
       description: 'Built a full-stack menstrual healthcare platform (MERN) with secure authentication and cycle-tracking data in MongoDB via a Node.js/Express API, and a responsive React.js/TypeScript frontend for logging and insights.',
       tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API'],
-      highlight: 'Integrated an AI health assistant using the OpenAI API to answer user questions about symptoms and cycle patterns in plain language'
+      highlight: 'Integrated an AI health assistant using the OpenAI API to answer user questions about symptoms and cycle patterns in plain language, aimed at making sensitive health information easier and less intimidating to access'
     },
     {
       number: '02',
       name: 'EquipNet',
       subtitle: 'Medical Equipment Rental Platform',
-      description: 'Built a full-stack medical-equipment rental marketplace (MERN) with Google Maps-based location search, a Node.js/Express API, and MongoDB-backed listings and bookings.',
+      description: 'Built a full-stack medical-equipment rental marketplace (MERN) with Google Maps-based location search, a Node.js/Express API, and MongoDB-backed listings and bookings; shortlisted for Google Solution Challenge India Regional Bootcamp 2024.',
       tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Google Maps API', 'OpenAI API'],
-      highlight: 'Shortlisted for Google Solution Challenge India Regional Bootcamp 2024'
+      highlight: "Integrated an AI-powered recommendation feature using the OpenAI API to suggest suitable equipment and rental duration from a user's described medical need"
     },
     {
       number: '03',
       name: 'House Price Prediction',
       subtitle: 'ML Web Application',
-      description: 'Built a full-stack property price estimator (MERN): a React.js/TypeScript form collects location, size, and amenities; a Node.js/Express API calls the OpenAI API for the prediction plus a natural-language explanation.',
-      tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API'],
-      highlight: 'MongoDB stores listings and prediction history'
+      description: 'Built a full-stack property price estimator (MERN): a React.js/TypeScript form collects location, size, and amenities; a Node.js/Express API calls the OpenAI API for the prediction plus a natural-language explanation; MongoDB stores listings and prediction history.',
+      tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API']
     },
     {
       number: '04',
@@ -118,7 +119,7 @@ const Projects = () => {
       subtitle: 'AI-Powered Trivia Challenge',
       description: 'Built a full-stack MERN trivia game, with a Node.js/Express API and MongoDB storing questions, scores, and leaderboards behind a React.js/TypeScript frontend with a live timer and progressive prize logic.',
       tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API'],
-      highlight: 'Integrated the OpenAI API to dynamically generate new quiz questions and hints on demand'
+      highlight: 'Integrated the OpenAI API to dynamically generate new quiz questions and hints on demand, keeping gameplay fresh beyond a fixed question bank'
     }
   ];
 

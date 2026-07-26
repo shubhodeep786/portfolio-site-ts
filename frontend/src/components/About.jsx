@@ -9,7 +9,7 @@ const About = () => {
 
   const stats = [
     { number: '02+', label: 'Years Experience' },
-    { number: '10+', label: 'Open Source PRs' },
+    { number: '10+', label: 'Open Source Repos' },
     { number: '04+', label: 'Major Projects' }
   ];
 
@@ -57,13 +57,14 @@ const About = () => {
             className="text-xl md:text-2xl leading-relaxed text-slate-300 max-w-5xl font-light"
           >
             Full Stack Software Engineer at{' '}
-            <span className="text-cyan-400 font-medium">47Billion Information Technologies</span>{' '}
-            with production experience building responsive, component-driven web applications using{' '}
+            <span className="text-cyan-400 font-medium">47Billion Information Technologies</span>, building
+            responsive, component-driven web applications in{' '}
             <span className="text-cyan-400 font-medium">React.js, TypeScript, and JavaScript (ES6+)</span>,
-            integrated with REST APIs in production. Hands-on backend development across independent{' '}
-            <span className="text-cyan-400 font-medium">MERN-stack projects</span> including REST API design,
-            authentication, and MongoDB schema design in Node.js/Express, alongside real-time features
-            and AI-integrated flows.
+            integrated with production REST APIs. Hands-on backend experience across independent{' '}
+            <span className="text-cyan-400 font-medium">MERN-stack projects</span> — REST API design,
+            authentication, and MongoDB schema design in Node.js/Express — with real-time features and
+            AI-integrated flows. Strong grounding in accessibility, performance, and cross-functional
+            collaboration, with an active open-source contribution history.
           </motion.p>
 
           <motion.div
