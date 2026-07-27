@@ -23,9 +23,9 @@ import {
   SiVercel,
   SiNetlify,
   SiRender,
-  SiVisualstudiocode,
-  SiOpenai,
 } from 'react-icons/si';
+import { VscVscode } from 'react-icons/vsc';
+import { BsOpenai } from 'react-icons/bs';
 
 export const TECH_ICONS = {
   'JavaScript (ES6+)': SiJavascript,
@@ -54,6 +54,6 @@ export const TECH_ICONS = {
   'Vercel': SiVercel,
   'Netlify': SiNetlify,
   'Render': SiRender,
-  'VS Code': SiVisualstudiocode,
-  'OpenAI API': SiOpenai,
+  'VS Code': VscVscode,
+  'OpenAI API': BsOpenai,
 };
