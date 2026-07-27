@@ -54,68 +54,53 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // Create a text file with resume content
     const resumeContent = `TANYA SINGH
-Indore, India | tanyasingh1227@gmail.com | +91 9131414080
-linkedin.com/in/tanya-singh9b5492225 | github.com/Tanya1227
+Indore, Madhya Pradesh, India | +91-9131414080
+tanyasinghwork1227@gmail.com | linkedin.com/in/tanya-singh-9b5492225/ | github.com/Tanya1227 | portfolio-site-ts.vercel.app/
 
-PROFESSIONAL SUMMARY
-Full Stack Software Engineer at 47Billion Information Technologies, building responsive, component-driven web applications in React.js, TypeScript, and JavaScript (ES6+), integrated with production REST APIs. Hands-on backend experience across independent MERN-stack projects — REST API design, authentication, and MongoDB schema design in Node.js/Express — with real-time features and AI-integrated flows. Strong grounding in accessibility, performance, and cross-functional collaboration, with an active open-source contribution history.
+SUMMARY
+Full Stack JavaScript Engineer with almost 2 years of experience building scalable, enterprise-grade applications using React.js, TypeScript, Node.js, Express.js, and REST APIs. Skilled in modern frontend architecture, reusable component design, and API-driven development across the MERN stack. Focused on clean architecture and delivering high-performance, production-ready web applications for cross-functional engineering teams.
 
-TECHNICAL SKILLS
-Languages: JavaScript (ES6+), TypeScript
-Frontend: React.js, Redux Toolkit, TanStack Query, Tailwind CSS, HTML5, CSS3, Responsive & Mobile-First Design, Component Architecture, Accessibility (WCAG)
-Backend & Database: Node.js, Express.js, MongoDB, Mongoose, REST API Design, JWT Auth, Socket.io
-Tools & Platforms: Git & GitHub, Figma, Canva, VS Code, Postman, Vitest, Jest, React Testing Library, Vercel, Netlify, Render
-Core Concepts: Data Structures & Algorithms, Agile/Team Collaboration, UI/UX Design
+TECHNICAL EXPERTISE
+Languages: JavaScript (ES6+), TypeScript, HTML5, CSS3
+Frontend: React.js, Redux, Tailwind CSS, Responsive Design, API Integration, Component-Driven Architecture
+Backend: Node.js, Express.js, REST APIs
+Databases: MongoDB
+Developer Tools: Git, GitHub, Postman, Figma, VS Code
+AI Engineering & Developer Productivity: Claude Code, Cursor, Antigravity IDE, OpenAI API, Prompt Engineering, AI-Assisted Development
+Core Concepts: State Management, Component Architecture, RESTful Architecture, Responsive Design, Cross-Browser Compatibility, UI/UX Principles, Agile/Scrum, API-Driven Development
 
-EXPERIENCE
-Associate Software Engineer | 47Billion Information Technologies Pvt. Ltd. | Jan 2025 – Present
-- Develop and ship production-grade features for 7Seers, 47Billion's AI-powered mock interview and assessment platform, building reusable, type-safe React.js/TypeScript components consumed across candidate-facing and admin experiences
-- Own frontend features end-to-end, from UI implementation through REST API integration, directly shaping how candidates experience 7Seers' AI-driven interview and assessment flows
-- Collaborate cross-functionally with product and design to translate requirements into responsive, accessible interfaces
-- Contribute to performance and UX improvements across the frontend codebase, focusing on component reusability and maintainability
+PROFESSIONAL EXPERIENCE
+Associate Software Engineer | Jan 2025 – Present | 47Billion Information Technologies Pvt. Ltd. | Indore, India
+- Architected reusable, type-safe React.js/TypeScript component libraries, eliminating duplicate UI code across enterprise teams
+- Engineered centralized REST API integration via reusable hooks, reducing integration time by 65% in production applications
+- Accelerated design-to-development handoff by 60% using componentized architecture and AI-assisted workflows
+- Collaborated in Agile ceremonies and sprint planning, improving estimation accuracy and delivery predictability
 
-Software Development Intern | 47Billion Information Technologies Pvt. Ltd. | Jun 2024 – Aug 2024
-- Built and maintained responsive UI components in React.js and JavaScript for 7Seers' mock interview and assessment flows
-- Partnered with backend engineers on API contracts and response structuring
-- Practiced writing type-safe, maintainable component logic
+Software Development Intern | Jun 2024 – Aug 2024 | 47Billion Information Technologies Pvt. Ltd. | Indore, India
+- Engineered a backend search engine for a Housing Appraisal Platform, automating property data collection workflows
+- Integrated REST APIs into the React.js frontend for end-to-end property search, collaborating in an Agile environment
 
-Web Development & Designing Intern | Oasis Infobyte | Aug 2022 – Sep 2022
-- Developed and deployed single-page applications — a portfolio site and a temperature converter — using HTML5, CSS3, and JavaScript
-- Translated Figma design mockups into pixel-accurate, cross-browser-compatible interfaces
+TECHNICAL PROJECTS
+7Seers.ai -- AI-Powered Learning Platform | React.js, TypeScript, Node.js, Express.js, REST APIs, WebSocket, AI
+- Architected an AI-powered learning platform with adaptive assessment and real-time mock interview simulation
+- Engineered WebSocket-based live feedback and REST APIs powering adaptive, scalable assessment scoring
 
-Web Developer Intern | LetsGrowMore | Dec 2021 – Jan 2022
-- Built a landing page and a dynamic user-card grid layout with an animated loading state in React.js
+EquipNet -- Healthcare Equipment Marketplace | React.js, Node.js, Express.js, MongoDB, Google Maps API
+- Built a full-stack MERN marketplace connecting healthcare providers and renters via Google Maps-based location search
+- Designed REST APIs and MongoDB schemas managing listings and bookings, improving scalability and reliability
 
-Open Source Contributor | Hacktoberfest | Oct 2023
-- Contributed to 10+ open-source repositories; 6 pull requests successfully merged
+Saheli -- Women's Wellness Platform | React.js, Node.js, Express.js, MongoDB
+- Built a full-stack MERN platform delivering personalized wellness and diet recommendations based on user health data
+- Developed REST API-driven features connecting users with health specialists and menstrual hygiene education resources
 
-ACADEMIC & PERSONAL PROJECTS
-Saheli — Menstrual Healthcare Web Platform (React.js, TypeScript, Node.js, Express.js, MongoDB, OpenAI API)
-- Full-stack MERN platform with secure authentication and cycle-tracking data, plus an AI health assistant via the OpenAI API
-
-EquipNet — Medical Equipment Rental Platform (React.js, TypeScript, Node.js, Express.js, MongoDB, Google Maps API, OpenAI API)
-- Full-stack rental marketplace with Google Maps location search; shortlisted for Google Solution Challenge India Regional Bootcamp 2024
-
-House Price Prediction — ML Web App (React.js, TypeScript, Node.js, Express.js, MongoDB, OpenAI API)
-- Full-stack property price estimator with OpenAI-generated natural-language explanations
-
-QuizGenie — AI-Powered Trivia Challenge (React.js, TypeScript, Node.js, Express.js, MongoDB, OpenAI API)
-- Full-stack trivia game with live timer, leaderboards, and OpenAI-generated questions on demand
-
-LEADERSHIP & POSITIONS OF RESPONSIBILITY
-Lead, Google Developer Student Clubs | Medicaps University | Jul 2023 – Jul 2024
-Executive, Content & Design Team | Google Developer Student Clubs | Oct 2022 – Oct 2023
-Executive, Graphics Team | Google Developer Student Clubs | Nov 2021 – Nov 2022
+LEADERSHIP & ACHIEVEMENTS
+- Google Developer Student Clubs Lead: Led a 15+ member cross-functional team, driving developer advocacy through Google Cloud & GenAI Study Jams and technical workshops
+- Open-Source Contributor (Hacktoberfest): Delivered 6 merged pull requests across 10+ open-source React.js repositories, contributing to community-driven UI improvements
+- Certifications: NPTEL "Programming in Java" (Elite/Silver); IBM "Tools for Data Science"; Smart India Hackathon (SIH) 2023 Round 1 Qualifier
 
 EDUCATION
-B.Tech in Computer Science | Medicaps University, Indore, India | 2021 – 2025 | CGPA: 9.1 / 10
-Senior Secondary (XII), CBSE | Advanced Academy, Indore, India | 2021 | CGPA: 9.42 / 10
-
-CERTIFICATIONS & ACHIEVEMENTS
-- IBM "Tools for Data Science" (Nov 2023)
-- NPTEL: Programming in Java — Elite with Silver (Jan–Apr 2023)
-- Cleared Round 1 of Smart India Hackathon 2023
-- Completed Google Cloud Study Jam and Google Gen AI Study Jam`;
+B.Tech in Computer Science and Engineering | 2021 – 2025 | Medi-Caps University, Indore, India | CGPA: 9.1 / 10
+Senior Secondary (12th Standard) | 2021 | Advanced Academy (CBSE), Indore, India | Score: 94.2%`;
 
     const blob = new Blob([resumeContent], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);
@@ -221,8 +206,8 @@ CERTIFICATIONS & ACHIEVEMENTS
           >
             {[
               { icon: MapPin, text: 'Indore, India' },
-              { icon: Mail, text: 'tanyasingh1227@gmail.com' },
-              { icon: Phone, text: '+91 9131414080' }
+              { icon: Mail, text: 'tanyasinghwork1227@gmail.com' },
+              { icon: Phone, text: '+91-9131414080' }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -254,7 +239,7 @@ CERTIFICATIONS & ACHIEVEMENTS
               GitHub
             </MagneticLink>
             <MagneticLink
-              href="https://linkedin.com/in/tanya-singh9b5492225"
+              href="https://linkedin.com/in/tanya-singh-9b5492225"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-white/5 backdrop-blur-md border border-cyan-500/30 text-cyan-400 rounded-lg font-medium flex items-center gap-2 transition-colors hover:border-cyan-500/60 hover:bg-cyan-500/10 hover:shadow-glow"

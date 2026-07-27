@@ -11,19 +11,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'tanyasingh1227@gmail.com',
-      href: 'mailto:tanyasingh1227@gmail.com'
+      value: 'tanyasinghwork1227@gmail.com',
+      href: 'mailto:tanyasinghwork1227@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 9131414080',
+      value: '+91-9131414080',
       href: 'tel:+919131414080'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Indore, India',
+      value: 'Indore, Madhya Pradesh, India',
       href: null
     }
   ];
@@ -37,7 +37,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/tanya-singh9b5492225'
+      href: 'https://linkedin.com/in/tanya-singh-9b5492225'
     }
   ];
 
@@ -164,8 +164,8 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold text-white mb-6">Education</h3>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xl font-semibold text-cyan-400">B.Tech in Computer Science</h4>
-                    <p className="text-slate-300 mt-2">Medicaps University, Indore, India</p>
+                    <h4 className="text-xl font-semibold text-cyan-400">B.Tech in Computer Science and Engineering</h4>
+                    <p className="text-slate-300 mt-2">Medi-Caps University, Indore, India</p>
                     <p className="text-slate-400 mt-1 font-mono text-sm">2021 – 2025</p>
                     <div className="mt-4 inline-block px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
                       <span className="text-cyan-400 font-semibold">CGPA: 9.1 / 10</span>
@@ -173,11 +173,11 @@ const Contact = () => {
                   </div>
                   <div className="h-px bg-white/10" />
                   <div>
-                    <h4 className="text-xl font-semibold text-cyan-400">Senior Secondary (XII), CBSE</h4>
-                    <p className="text-slate-300 mt-2">Advanced Academy, Indore, India</p>
+                    <h4 className="text-xl font-semibold text-cyan-400">Senior Secondary (12th Standard)</h4>
+                    <p className="text-slate-300 mt-2">Advanced Academy (CBSE), Indore, India</p>
                     <p className="text-slate-400 mt-1 font-mono text-sm">2021</p>
                     <div className="mt-4 inline-block px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
-                      <span className="text-cyan-400 font-semibold">CGPA: 9.42 / 10</span>
+                      <span className="text-cyan-400 font-semibold">Score: 94.2%</span>
                     </div>
                   </div>
                 </div>

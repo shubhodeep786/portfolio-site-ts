@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Award, BookOpen, Trophy, Code2, Layers } from 'lucide-react';
+import { Award, BookOpen, Trophy, Code2, Layers, Brain, Database, Cpu, Terminal, Wrench } from 'lucide-react';
 import { TECH_ICONS } from '@/lib/techIcons';
 import SectionBackground from './SectionBackground';
 
@@ -10,89 +10,85 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      icon: BookOpen,
+      icon: Code2,
       title: 'Languages',
-      skills: ['JavaScript (ES6+)', 'TypeScript']
+      skills: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3']
     },
     {
       icon: Award,
       title: 'Frontend',
       skills: [
         'React.js',
-        'Redux Toolkit',
-        'TanStack Query',
+        'Redux',
         'Tailwind CSS',
-        'HTML5',
-        'CSS3',
-        'Responsive & Mobile-First Design',
-        'Component Architecture',
-        'Accessibility (WCAG)'
+        'Responsive Design',
+        'API Integration',
+        'Component-Driven Architecture'
       ]
     },
     {
-      icon: Trophy,
-      title: 'Backend & Database',
-      skills: [
-        'Node.js',
-        'Express.js',
-        'MongoDB',
-        'Mongoose',
-        'REST API Design',
-        'JWT Auth',
-        'Socket.io'
-      ]
+      icon: Terminal,
+      title: 'Backend',
+      skills: ['Node.js', 'Express.js', 'REST APIs']
     },
     {
-      icon: BookOpen,
-      title: 'Tools & Platforms',
+      icon: Database,
+      title: 'Databases',
+      skills: ['MongoDB']
+    },
+    {
+      icon: Wrench,
+      title: 'Developer Tools',
+      skills: ['Git', 'GitHub', 'Postman', 'Figma', 'VS Code']
+    },
+    {
+      icon: Brain,
+      title: 'AI Engineering & Developer Productivity',
       skills: [
-        'Git & GitHub',
-        'Figma',
-        'Canva',
-        'VS Code',
-        'Postman',
-        'Vitest',
-        'Jest',
-        'React Testing Library',
-        'Vercel',
-        'Netlify',
-        'Render'
+        'Claude Code',
+        'Cursor',
+        'Antigravity IDE',
+        'OpenAI API',
+        'Prompt Engineering',
+        'AI-Assisted Development'
       ]
     },
     {
       icon: Layers,
       title: 'Core Concepts',
       wide: true,
-      skills: ['Data Structures & Algorithms', 'Agile/Team Collaboration', 'UI/UX Design']
+      skills: [
+        'State Management',
+        'Component Architecture',
+        'RESTful Architecture',
+        'Responsive Design',
+        'Cross-Browser Compatibility',
+        'UI/UX Principles',
+        'Agile/Scrum',
+        'API-Driven Development'
+      ]
     }
   ];
 
   const leadership = [
     {
-      title: 'Lead, Google Developer Student Clubs',
-      org: 'Medicaps University',
+      title: 'Google Developer Student Clubs Lead',
+      org: 'Medi-Caps University',
       period: 'Jul 2023 – Jul 2024',
-      description: 'Led a cross-functional team of 15+ members, coordinating technical events including Google Cloud Study Jams, Gen AI Study Jams, Solution Challenge, and Flutter workshops.'
+      description: 'Led a 15+ member cross-functional team, driving developer advocacy through Google Cloud & GenAI Study Jams and technical workshops.'
     },
     {
-      title: 'Executive, Content & Design Team',
-      org: 'Google Developer Student Clubs',
-      period: 'Oct 2022 – Oct 2023',
-      description: 'Produced social media content and event collateral using Figma and Canva, supporting community growth and event outreach.'
-    },
-    {
-      title: 'Executive, Graphics Team',
-      org: 'Google Developer Student Clubs',
-      period: 'Nov 2021 – Nov 2022',
-      description: 'Designed visual assets and graphics for club events and social media campaigns.'
+      title: 'Open-Source Contributor (Hacktoberfest)',
+      org: 'GitHub',
+      period: 'Oct 2023',
+      description: 'Delivered 6 merged pull requests across 10+ open-source React.js repositories, contributing to community-driven UI improvements.'
     }
   ];
 
   const certifications = [
-    'IBM "Tools for Data Science" (Nov 2023)',
-    'NPTEL: Programming in Java — Elite with Silver (Jan–Apr 2023)',
-    'Cleared Round 1 of Smart India Hackathon 2023',
-    'Completed Google Cloud Study Jam and Google Gen AI Study Jam'
+    'NPTEL "Programming in Java" (Elite/Silver)',
+    'IBM "Tools for Data Science"',
+    'Smart India Hackathon (SIH) 2023 Round 1 Qualifier'
   ];
 
   const skillContainerVariants = {

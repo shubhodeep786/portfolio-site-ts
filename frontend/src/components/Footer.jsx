@@ -36,7 +36,7 @@ const Footer = () => {
               <Github className="w-5 h-5 text-slate-400 hover:text-cyan-400 transition-colors" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/tanya-singh9b5492225"
+              href="https://linkedin.com/in/tanya-singh-9b5492225"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 5 }}
@@ -46,7 +46,7 @@ const Footer = () => {
               <Linkedin className="w-5 h-5 text-slate-400 hover:text-cyan-400 transition-colors" />
             </motion.a>
             <motion.a
-              href="mailto:tanyasingh1227@gmail.com"
+              href="mailto:tanyasinghwork1227@gmail.com"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
               className="cursor-hover p-3 bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-lg hover:border-cyan-500/50 hover:bg-cyan-500/10 hover:shadow-glow transition-all"

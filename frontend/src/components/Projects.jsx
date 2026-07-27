@@ -92,34 +92,27 @@ const Projects = () => {
   const projects = [
     {
       number: '01',
-      name: 'Saheli',
-      subtitle: 'Menstrual Healthcare Web Platform',
-      description: 'Built a full-stack menstrual healthcare platform (MERN) with secure authentication and cycle-tracking data in MongoDB via a Node.js/Express API, and a responsive React.js/TypeScript frontend for logging and insights.',
-      tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API'],
-      highlight: 'Integrated an AI health assistant using the OpenAI API to answer user questions about symptoms and cycle patterns in plain language, aimed at making sensitive health information easier and less intimidating to access'
+      name: '7Seers.ai',
+      subtitle: 'AI-Powered Learning Platform',
+      description: 'Architected an AI-powered learning platform with adaptive assessment and real-time mock interview simulation.',
+      tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'REST APIs', 'WebSocket', 'AI'],
+      highlight: 'Engineered WebSocket-based live feedback and REST APIs powering adaptive, scalable assessment scoring.'
     },
     {
       number: '02',
       name: 'EquipNet',
-      subtitle: 'Medical Equipment Rental Platform',
-      description: 'Built a full-stack medical-equipment rental marketplace (MERN) with Google Maps-based location search, a Node.js/Express API, and MongoDB-backed listings and bookings; shortlisted for Google Solution Challenge India Regional Bootcamp 2024.',
-      tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Google Maps API', 'OpenAI API'],
-      highlight: "Integrated an AI-powered recommendation feature using the OpenAI API to suggest suitable equipment and rental duration from a user's described medical need"
+      subtitle: 'Healthcare Equipment Marketplace',
+      description: 'Built a full-stack MERN marketplace connecting healthcare providers and renters via Google Maps-based location search.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Google Maps API'],
+      highlight: 'Designed REST APIs and MongoDB schemas managing listings and bookings, improving scalability and reliability.'
     },
     {
       number: '03',
-      name: 'House Price Prediction',
-      subtitle: 'AI Web Application',
-      description: 'Built a full-stack property price estimator (MERN): a React.js/TypeScript form collects location, size, and amenities; a Node.js/Express API calls the OpenAI API for the prediction plus a natural-language explanation; MongoDB stores listings and prediction history.',
-      tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API']
-    },
-    {
-      number: '04',
-      name: 'QuizGenie',
-      subtitle: 'AI-Powered Trivia Challenge',
-      description: 'Built a full-stack MERN trivia game, with a Node.js/Express API and MongoDB storing questions, scores, and leaderboards behind a React.js/TypeScript frontend with a live timer and progressive prize logic.',
-      tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API'],
-      highlight: 'Integrated the OpenAI API to dynamically generate new quiz questions and hints on demand, keeping gameplay fresh beyond a fixed question bank'
+      name: 'Saheli',
+      subtitle: "Women's Wellness Platform",
+      description: 'Built a full-stack MERN platform delivering personalized wellness and diet recommendations based on user health data.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      highlight: 'Developed REST API-driven features connecting users with health specialists and menstrual hygiene education resources.'
     }
   ];
 

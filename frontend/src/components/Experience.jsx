@@ -14,10 +14,10 @@ const Experience = () => {
       company: '47Billion Information Technologies Pvt. Ltd.',
       period: 'Jan 2025 – Present',
       points: [
-        "Develop and ship production-grade features for 7Seers, 47Billion's AI-powered mock interview and assessment platform, building reusable, type-safe React.js/TypeScript components consumed across candidate-facing and admin experiences",
-        "Own frontend features end-to-end — from UI implementation through REST API integration — directly shaping how candidates experience 7Seers' AI-driven interview and assessment flows, from question delivery to results feedback",
-        'Collaborate cross-functionally with product and design to translate requirements into responsive, accessible interfaces, and participate in code reviews to uphold frontend engineering standards',
-        'Contribute to performance and UX improvements across the frontend codebase, focusing on component reusability and maintainability'
+        'Architected reusable, type-safe React.js/TypeScript component libraries, eliminating duplicate UI code across enterprise teams',
+        'Engineered centralized REST API integration via reusable hooks, reducing integration time by 65% in production applications',
+        'Accelerated design-to-development handoff by 60% using componentized architecture and AI-assisted workflows',
+        'Collaborated in Agile ceremonies and sprint planning, improving estimation accuracy and delivery predictability'
       ]
     },
     {
@@ -26,38 +26,8 @@ const Experience = () => {
       company: '47Billion Information Technologies Pvt. Ltd.',
       period: 'Jun 2024 – Aug 2024',
       points: [
-        "Built and maintained responsive UI components in React.js and JavaScript for 7Seers' mock interview and assessment flows, integrating REST APIs to render dynamic, data-driven views used directly by candidates",
-        'Partnered with backend engineers on API contracts and response structuring, reducing integration back-and-forth and ensuring clean, type-safe data consumption in the React frontend',
-        'Practiced writing type-safe, maintainable component logic and participated in code reviews to align with team frontend standards'
-      ]
-    },
-    {
-      number: '03',
-      title: 'Web Development & Designing Intern',
-      company: 'Oasis Infobyte',
-      period: 'Aug 2022 – Sep 2022',
-      points: [
-        'Developed and deployed single-page applications — a portfolio site and a temperature converter — using HTML5, CSS3, and JavaScript',
-        'Translated Figma design mockups into pixel-accurate, cross-browser-compatible interfaces'
-      ]
-    },
-    {
-      number: '04',
-      title: 'Web Developer Intern',
-      company: 'LetsGrowMore',
-      period: 'Dec 2021 – Jan 2022',
-      points: [
-        'Built a landing page and a dynamic user-card grid layout with an animated loading state in React.js, focused on reusable, responsive components'
-      ]
-    },
-    {
-      number: '05',
-      title: 'Open Source Contributor',
-      company: 'Hacktoberfest',
-      period: 'Oct 2023',
-      points: [
-        'Contributed to 10+ open-source repositories, shipping feature additions, bug fixes, and UI/UX refinements in JavaScript and React.js codebases',
-        '6 pull requests successfully merged'
+        'Engineered a backend search engine for a Housing Appraisal Platform, automating property data collection workflows',
+        'Integrated REST APIs into the React.js frontend for end-to-end property search, collaborating in an Agile environment'
       ]
     }
   ];

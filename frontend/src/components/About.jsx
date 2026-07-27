@@ -10,7 +10,7 @@ const About = () => {
   const stats = [
     { number: '02+', label: 'Years Experience' },
     { number: '10+', label: 'Open Source Repos' },
-    { number: '04+', label: 'Major Projects' }
+    { number: '03+', label: 'Major Projects' }
   ];
 
   const containerVariants = {
@@ -56,15 +56,14 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl leading-relaxed text-slate-300 max-w-5xl font-light"
           >
-            Full Stack Software Engineer at{' '}
-            <span className="text-cyan-400 font-medium">47Billion Information Technologies</span>, building
-            responsive, component-driven web applications in{' '}
-            <span className="text-cyan-400 font-medium">React.js, TypeScript, and JavaScript (ES6+)</span>,
-            integrated with production REST APIs. Hands-on backend experience across independent{' '}
-            <span className="text-cyan-400 font-medium">MERN-stack projects</span> — REST API design,
-            authentication, and MongoDB schema design in Node.js/Express — with real-time features and
-            AI-integrated flows. Strong grounding in accessibility, performance, and cross-functional
-            collaboration, with an active open-source contribution history.
+            Full Stack JavaScript Engineer with almost{' '}
+            <span className="text-cyan-400 font-medium">2 years of experience</span> building scalable,
+            enterprise-grade applications using{' '}
+            <span className="text-cyan-400 font-medium">React.js, TypeScript, Node.js, Express.js, and REST APIs</span>.
+            Skilled in modern frontend architecture, reusable component design, and API-driven development across the{' '}
+            <span className="text-cyan-400 font-medium">MERN stack</span>. Focused on{' '}
+            <span className="text-cyan-400 font-medium">clean architecture</span> and delivering high-performance,
+            production-ready web applications for cross-functional engineering teams.
           </motion.p>
 
           <motion.div

@@ -23,6 +23,8 @@ import {
   SiVercel,
   SiNetlify,
   SiRender,
+  SiVisualstudiocode,
+  SiOpenai,
 } from 'react-icons/si';
 
 export const TECH_ICONS = {
@@ -30,6 +32,7 @@ export const TECH_ICONS = {
   'TypeScript': SiTypescript,
   'React.js': SiReact,
   'Redux Toolkit': SiRedux,
+  'Redux': SiRedux,
   'TanStack Query': SiReactquery,
   'Tailwind CSS': SiTailwindcss,
   'HTML5': SiHtml5,
@@ -42,6 +45,7 @@ export const TECH_ICONS = {
   'Socket.io': SiSocketdotio,
   'Git & GitHub': SiGithub,
   'Git': SiGit,
+  'GitHub': SiGithub,
   'Figma': SiFigma,
   'Postman': SiPostman,
   'Vitest': SiVitest,
@@ -50,4 +54,6 @@ export const TECH_ICONS = {
   'Vercel': SiVercel,
   'Netlify': SiNetlify,
   'Render': SiRender,
+  'VS Code': SiVisualstudiocode,
+  'OpenAI API': SiOpenai,
 };
