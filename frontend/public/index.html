@@ -3,6 +3,19 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script>
+            // Must run before React mounts: scroll-into-view reveal animations
+            // (framer-motion whileInView, viewport.once) attach their
+            // IntersectionObserver as soon as each component mounts. If the
+            // browser restores a scrolled-down position on reload before that,
+            // sections already in view fire their one-time reveal immediately
+            // and never animate again once we scroll back to top. Resetting
+            // scroll here, ahead of any component code, prevents that race.
+            if ("scrollRestoration" in history) {
+                history.scrollRestoration = "manual";
+            }
+            window.scrollTo(0, 0);
+        </script>
         <meta name="theme-color" content="#fafafa" />
         <meta name="description" content="Tanya Singh — Full Stack Developer &amp; MERN Stack Specialist. Portfolio, projects, and resume." />
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Ctext x='32' y='42' font-family='JetBrains Mono, monospace' font-size='24' font-weight='700' fill='white' text-anchor='middle'%3ETS%3C/text%3E%3C/svg%3E" />

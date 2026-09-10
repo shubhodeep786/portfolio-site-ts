@@ -43,7 +43,7 @@ function CompanyBlock({ company, index }) {
         </div>
       </div>
 
-      <Accordion type="single" collapsible defaultValue={projects[0]?.slug} className="flex flex-col gap-4">
+      <Accordion type="multiple" defaultValue={projects.map((project) => project.slug)} className="flex flex-col gap-4">
         {projects.map((project, i) => (
           <AccordionItem
             key={project.slug}

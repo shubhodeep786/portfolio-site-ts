@@ -105,10 +105,12 @@ export function Contact() {
           >
             <motion.div animate={nameControls}>
               <Label htmlFor="contact-name" className="text-xs uppercase tracking-[0.16em] text-ink-500">
-                Name
+                Name <span className="text-red-400">*</span>
               </Label>
               <Input
                 id="contact-name"
+                required
+                aria-required="true"
                 data-testid={CONTACT.nameInput}
                 value={values.name}
                 onChange={handleChange('name')}
@@ -124,11 +126,13 @@ export function Contact() {
 
             <motion.div animate={emailControls}>
               <Label htmlFor="contact-email" className="text-xs uppercase tracking-[0.16em] text-ink-500">
-                Email
+                Email <span className="text-red-400">*</span>
               </Label>
               <Input
                 id="contact-email"
                 type="email"
+                required
+                aria-required="true"
                 data-testid={CONTACT.emailInput}
                 value={values.email}
                 onChange={handleChange('email')}
@@ -157,11 +161,13 @@ export function Contact() {
 
             <motion.div animate={messageControls}>
               <Label htmlFor="contact-message" className="text-xs uppercase tracking-[0.16em] text-ink-500">
-                Message
+                Message <span className="text-red-400">*</span>
               </Label>
               <Textarea
                 id="contact-message"
                 rows={5}
+                required
+                aria-required="true"
                 data-testid={CONTACT.messageInput}
                 value={values.message}
                 onChange={handleChange('message')}

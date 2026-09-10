@@ -25,18 +25,6 @@ export function TechStrip() {
 
   return (
     <section aria-label="Technology stack" className="relative py-10">
-      <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true" focusable="false">
-        <filter id="tech-glass-refraction">
-          <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="turb" />
-          <feDisplacementMap in="SourceGraphic" in2="turb" scale="6" xChannelSelector="R" yChannelSelector="G" />
-          <feSpecularLighting result="spec" in="turb" specularExponent="12" lightingColor="#ffffff" surfaceScale="2">
-            <feDistantLight azimuth="135" elevation="60" />
-          </feSpecularLighting>
-          <feComposite in="spec" in2="SourceAlpha" operator="in" result="specClipped" />
-          <feBlend mode="overlay" in="SourceGraphic" in2="specClipped" />
-        </filter>
-      </svg>
-
       <Marquee speed={34}>
         {items.map((item) => (
           <TechPill key={item} label={item} />

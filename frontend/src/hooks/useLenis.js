@@ -16,14 +16,10 @@ export function scrollToSection(id, options = {}) {
 }
 
 export function useLenis() {
+  // Scroll restoration is handled by an inline script in public/index.html,
+  // which runs before React mounts (and before any whileInView observer
+  // attaches) - see that file for why it can't live in a React effect.
   const prefersReducedMotion = usePrefersReducedMotion();
-
-  useEffect(() => {
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
-    }
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     if (prefersReducedMotion) return undefined;

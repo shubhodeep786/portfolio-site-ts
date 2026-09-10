@@ -4,6 +4,7 @@ import { ArrowDown } from 'lucide-react';
 import { RESUME } from '@/data/resume';
 import { HERO } from '@/constants/testIds/home';
 import { scrollToSection } from '@/hooks/useLenis';
+import { useFontsReady } from '@/hooks/useFontsReady';
 import { MagneticButton } from '@/components/MagneticButton';
 import { ProfileCard } from '@/components/ProfileCard';
 
@@ -11,6 +12,7 @@ const EASE = [0.2, 0.8, 0.2, 1];
 
 export function Hero() {
   const sectionRef = useRef(null);
+  const fontsReady = useFontsReady();
   const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start start', 'end start'] });
   const contentOpacity = useTransform(scrollYProgress, [0, 0.65], [1, 0]);
   const contentScale = useTransform(scrollYProgress, [0, 0.65], [1, 0.94]);
@@ -55,7 +57,7 @@ export function Hero() {
 
               <p
                 aria-label={profile.name}
-                className="glass-heading glass-heading-hero mt-1 text-5xl font-bold leading-[1.02] tracking-[-0.03em] sm:text-7xl lg:text-8xl"
+                className="glass-heading glass-heading-hero mt-1 text-5xl font-bold leading-[1.02] tracking-[-0.03em] sm:text-7xl xl:text-8xl"
               >
                 {nameWords.map((word, wi) => (
                   <span key={word + wi}>
@@ -67,7 +69,7 @@ export function Hero() {
                           <motion.span
                             key={charIndex}
                             initial={{ opacity: 0, y: 16 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={fontsReady ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
                             transition={{ duration: 0.4, ease: EASE, delay }}
                             className="inline-block"
                           >
