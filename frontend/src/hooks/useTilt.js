@@ -6,8 +6,8 @@ export function useTilt({ max = 10, disabled = false } = {}) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const springX = useSpring(x, { stiffness: 300, damping: 25 });
-  const springY = useSpring(y, { stiffness: 300, damping: 25 });
+  const springX = useSpring(x, { stiffness: 230, damping: 23 });
+  const springY = useSpring(y, { stiffness: 230, damping: 23 });
 
   const rotateX = useTransform(springY, [-0.5, 0.5], [max, -max]);
   const rotateY = useTransform(springX, [-0.5, 0.5], [-max, max]);
@@ -26,7 +26,7 @@ export function useTilt({ max = 10, disabled = false } = {}) {
 
   return {
     ref,
-    style: disabled ? {} : { rotateX, rotateY, transformPerspective: 800 },
+    style: disabled ? {} : { rotateX, rotateY, transformPerspective: 1000 },
     handlers: {
       onMouseMove: handleMouseMove,
       onMouseLeave: handleMouseLeave,
