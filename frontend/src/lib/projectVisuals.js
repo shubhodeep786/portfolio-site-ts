@@ -1,9 +1,9 @@
 import { Code2, HeartPulse, Layers, Leaf, Rocket, Sparkles } from 'lucide-react';
-import img7Seers from '@/assets/project-7seers-ai.jpg';
-import imgEquipNet from '@/assets/project-equipnet.jpg';
-import imgComponentSystem from '@/assets/project-reusable-component-api-systems.jpg';
-import imgARVR from '@/assets/project-arvr-learning-experience.jpg';
-import imgGitHubTracker from '@/assets/project-github-time-tracking-extension.jpg';
+import img7Seers from '@/assets/project-7seers-ai.webp';
+import imgEquipNet from '@/assets/project-equipnet.webp';
+import imgComponentSystem from '@/assets/project-reusable-component-api-systems.webp';
+import imgARVR from '@/assets/project-arvr-learning-experience.webp';
+import imgGitHubTracker from '@/assets/project-github-time-tracking-extension.webp';
 
 const PROJECT_COVERS = {
   '7seers-ai': img7Seers,

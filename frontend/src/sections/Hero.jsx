@@ -53,9 +53,9 @@ export function Hero() {
                 {profile.availability}
               </div>
 
-              <h1 className="text-2xl font-normal text-ink-500 sm:text-4xl">Hi, I&apos;m</h1>
+              <p className="text-2xl font-normal text-ink-500 sm:text-4xl">Hi, I&apos;m</p>
 
-              <p
+              <h1
                 aria-label={profile.name}
                 className="glass-heading glass-heading-hero mt-1 text-5xl font-bold leading-[1.02] tracking-[-0.03em] sm:text-7xl xl:text-8xl"
               >
@@ -70,7 +70,7 @@ export function Hero() {
                             key={charIndex}
                             initial={{ opacity: 0, y: 16 }}
                             animate={fontsReady ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
-                            transition={{ duration: 0.4, ease: EASE, delay }}
+                            transition={{ type: 'spring', stiffness: 220, damping: 24, mass: 0.7, delay }}
                             className="inline-block"
                           >
                             {char}
@@ -81,7 +81,7 @@ export function Hero() {
                     {wi < nameWords.length - 1 ? ' ' : null}
                   </span>
                 ))}
-              </p>
+              </h1>
 
               <p className="max-w-content mt-6 text-lg text-ink-500">{profile.tagline}</p>
 

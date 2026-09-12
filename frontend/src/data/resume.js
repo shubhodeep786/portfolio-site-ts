@@ -13,7 +13,7 @@ export const RESUME = {
     github: 'https://github.com/Tanya1227',
     years_experience: '2+',
     availability: 'Available from 20 Sep 2026',
-    avatar: '/assets/memoji-avatar-transparent.png',
+    avatar: '/assets/memoji-avatar-transparent.webp',
   },
 
   summary:

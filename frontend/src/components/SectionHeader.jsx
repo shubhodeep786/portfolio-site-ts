@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-const EASE = [0.2, 0.8, 0.2, 1];
-
 const headerVariants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.07 } },
@@ -10,12 +8,12 @@ const headerVariants = {
 
 const fadeVariants = {
   hidden: { opacity: 0, y: 12 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
+  visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 170, damping: 22, mass: 1 } },
 };
 
 const wordVariants = {
-  hidden: { opacity: 0, rotateX: -35 },
-  visible: { opacity: 1, rotateX: 0, transition: { duration: 0.5, ease: EASE } },
+  hidden: { opacity: 0, rotateX: -16 },
+  visible: { opacity: 1, rotateX: 0, transition: { type: 'spring', stiffness: 180, damping: 20, mass: 0.9 } },
 };
 
 export function SectionHeader({ eyebrow, title, description, className }) {

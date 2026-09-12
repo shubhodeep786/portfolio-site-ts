@@ -24,7 +24,7 @@ export function ProjectCard({ project, index, featured = false, onOpen }) {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-center scale-100 transition-transform duration-500 group-hover:scale-110"
+        className="absolute inset-0 bg-cover bg-center scale-100 transition-transform duration-500 ease-signature group-hover:scale-110"
         style={{ backgroundImage: getProjectCover(project, index) }}
       />
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />

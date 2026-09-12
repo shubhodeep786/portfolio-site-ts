@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useMemo, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useMagnetic } from '@/hooks/useMagnetic';
 import { cn } from '@/lib/utils';
@@ -14,7 +14,10 @@ export function MagneticButton({
 }) {
   const { ref, style, handlers } = useMagnetic({ strength, radius, disabled });
   const glowRef = useRef(null);
-  const MotionComponent = motion(as);
+  // Memoized: motion.create() returns a new component type each call, and an
+  // unmemoized call here would give React a new component identity every
+  // render, remounting the underlying DOM node instead of updating it.
+  const MotionComponent = useMemo(() => motion.create(as), [as]);
 
   const handleMouseMove = (event) => {
     handlers.onMouseMove(event);

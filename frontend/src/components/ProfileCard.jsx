@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useTilt } from '@/hooks/useTilt';
 import { RESUME } from '@/data/resume';
 import { HERO } from '@/constants/testIds/home';
-import memojiTransparent from '@/assets/memoji-avatar-transparent.png';
+import memojiTransparent from '@/assets/memoji-avatar-transparent.webp';
 
 export function ProfileCard() {
   const { ref, style, handlers } = useTilt({ max: 8 });
@@ -31,7 +31,7 @@ export function ProfileCard() {
             <img
               src={avatarSrc}
               alt={`${profile.name} Memoji Avatar`}
-              className="h-full w-full object-contain filter drop-shadow-[0_12px_28px_rgba(168,85,247,0.35)] transition-transform duration-500 group-hover:scale-105"
+              className="h-full w-full object-contain filter drop-shadow-[0_12px_28px_rgba(168,85,247,0.35)] transition-transform duration-500 ease-signature group-hover:scale-105"
             />
           ) : (
             <div className="flex h-28 w-28 items-center justify-center rounded-full bg-ink-900 font-display text-2xl font-bold tracking-tight text-surface-0">
